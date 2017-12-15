@@ -1,0 +1,171 @@
+body{
+  background-color: #3b5373;
+  margin-top: 5rem;
+  color:white;
+  font-family: 'Ubuntu', sans-serif;
+}
+.menu{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.board-view{
+  display: none;
+}
+.board{
+  width: 60rem;
+  height: 60rem;
+  margin: auto;
+}
+
+.board tr{
+  width: 60rem;
+  height: 20rem;
+  margin: 0px;
+}
+
+.board td{
+  text-align: center;
+  font-size: 10em;
+  height: 20rem;
+  width: 33%;
+  border: 1px solid gray;
+  display: inline-block;
+  color: #0fd570;
+}
+
+
+.left{
+  border-left: none !important;
+}
+
+.top{
+  border-top: none !important;
+}
+
+.right{
+  border-right: none !important;
+}
+
+.bottom{
+  border-bottom: none !important;
+}
+
+.switch{
+  position: relative;
+}
+
+.switch label{
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  margin: -2px;
+}
+
+.switch input[type="radio"]:checked + label{
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.switch input[type="radio"]{
+  display: none;
+}
+.switch label: after{
+}
+
+.switch label.red{
+  background-color: #c23434;
+  border-radius: 0px 10px 10px 0px
+}
+
+.switch label.blue{
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(48, 102, 166);
+}
+
+
+.difficulty label{
+  padding: 0.25em;
+  background: #414040;
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  margin: 20px -2px 20px -2px;
+}
+.difficulty input[type="radio"]{
+  display: none;
+}
+
+.difficulty input[type="radio"]:checked + label{
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.play{
+  width: 10rem;
+  height: 3rem;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(65, 191, 119);
+}
+
+.difficulty label.left{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.difficulty label.right{
+  border-radius: 0 10px 10px 0;
+}
+
+.play:active{
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+h2{
+  visibility: hidden;
+  padding-bottom: 1em;
+}
+
+.modal-content{
+  color:black;
+  height:20rem;
+  width:40rem;
+  text-align: center;
+  margin: auto;
+}
+
+.modal-body{
+  margin: auto;
+}
+
+.modal-body button{
+  width: 50%;
+  height: 10rem;
+}
+
+.modal-body button.green{
+  background-color: rgb(65, 191, 119);
+}
+
+.modal-body button.red{
+  background-color: #c23434;
+}
+
+.reset{
+  width: 15rem;
+  padding: 10px;
+  margin-top: 50px;
+  margin: auto;
+  text-align: center;
+  display: none;
+}

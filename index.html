@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" charset="utf-8">
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div class="menu" id="menu">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="difficulty">
+                <input type="radio" name="diff" id="easy">
+                <label for="easy" class="left">Easy</label>
+                <input type="radio" name="diff" id="med" checked="checked">
+                <label for="med">Medium</label>
+                <input type="radio" name="diff" id="hard">
+                <label for="hard" class="right">Hard</label>
+            </div>
+            <div class="switch">
+                <input type="radio" name="choice" id="X" checked="checked">
+                <label for="X" class="blue">X</label>
+                <input type="radio" name="choice" id="O">
+                <label for="O" class="red">O</label>
+            </div>
+            <button class="play" id="play">Play!</button>
+        </div>
+
+        <div class="board-view" id="board-view">
+            <table class="board" id="board">
+                <h2 class="text-center" id="dispText">Placeholder Text</h2>
+                <tr>
+                    <td class="top left" name="0">
+                    <div id="0"></div></td>
+                    <td class="top" name="1">
+                    <div id="1"></div></td>
+                    <td class="top right" name="2">
+                    <div id="2"></div></td>
+                </tr>
+                <tr>
+                    <td class="left" name="3">
+                    <div id="3"></div></td>
+                    <td name="4">
+                    <div id="4"></div></td>
+                    <td class="right" name="5">
+                    <div id="5"></div></td>
+                </tr>
+                <tr>
+                    <td class="left bottom" name="6">
+                      <div id="6"></div>
+                    </td>
+                    <td class="bottom" name="7">
+                    <div id="7"></div></td>
+                    <td class="right bottom" name="8">
+                    <div id="8"></div></td>
+                </tr>
+
+            </table>
+            <div class="reset" id="reset-container">
+              <button class="play" id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="modal fade" id="replayModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Would you like to play again?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="close red" id="No" data-dismiss="modal">No</button>
+                        <button type="button" class="close green" id="Yes" data-dismiss="modal">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
